@@ -1,4 +1,4 @@
-# arg-workflow-linter-action
+# argo-workflow-linter-action
 
 A [GitHub Action](https://github.com/features/actions) for using [argo-workflow-linter-action](https://github.com/mojokb/arg-linter-action) in your workflows.
 
