@@ -1,0 +1,15 @@
+name: "argo-workflow-linter"
+description: "Validate argo workflow schemas"
+author: "kb <kb@aimmo.co.kr>"
+branding:
+  icon: "check"
+  color: "green"
+inputs: 
+  files:
+    description: "Files or directories to validate"
+    default: "."
+runs:
+  using: 'docker'
+  image: 'docker://brightfly/argo-workflow-linter-action:latest'
+  args:
+  - ${{ inputs.files }} 
