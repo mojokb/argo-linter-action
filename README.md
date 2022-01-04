@@ -16,6 +16,11 @@ jobs:
     - uses: actions/checkout@master
     - name: test
       uses: mojokb/argo-linter-action@master
+      with:
+        files: .
 ```
 
+| Property | Default | Description |
+| --- | --- | --- |
+| files | . | Which files or directories to validate |
 
