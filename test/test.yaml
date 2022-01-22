@@ -1,9 +1,9 @@
-piVersion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Workflow                  # CRD - Workflow
 metadata:
-  generateName: hello-world-    # workflow 이름
+  namespace: default
 spec:
-  ntrypoint: whalesay          # workflow 시작점
+  entrypoint: whalesay
   templates:
   - name: whalesay
     container:

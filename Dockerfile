@@ -14,4 +14,8 @@ COPY --from=builder /usr/bin/argo /usr/bin/argo
 
 WORKDIR /data
 
-ENTRYPOINT ["argo", "lint",  "--offline", "--kinds=workflows"]
+COPY entrypoint.sh entrypoint.sh
+
+COPY test test
+
+ENTRYPOINT ["./entrypoint.sh"]

@@ -10,6 +10,6 @@ inputs:
     default: "."
 runs:
   using: 'docker'
-  image: 'docker://brightfly/argo-workflow-linter-action:latest'
+  image: 'docker://brightfly/argo-workflow-linter-action:0.1.0'
   args:
   - ${{ inputs.files }} 
