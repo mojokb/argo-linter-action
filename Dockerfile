@@ -14,8 +14,8 @@ COPY --from=builder /usr/bin/argo /usr/bin/argo
 
 WORKDIR /data
 
-COPY entrypoint.sh entrypoint.sh
+COPY entrypoint.sh /data/entrypoint.sh
 
 COPY test test
 
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["/data/entrypoint.sh"]
